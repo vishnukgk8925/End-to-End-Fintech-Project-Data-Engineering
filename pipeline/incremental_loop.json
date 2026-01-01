@@ -12,6 +12,7 @@
 						"value": "@pipeline().parameters.loop_input\r\n",
 						"type": "Expression"
 					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "last_cdc",
@@ -42,8 +43,14 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container": "bronze",
-										"folder": "cdc",
-										"file": "cdc.json"
+										"folder": {
+											"value": "@{item().table}_cdc",
+											"type": "Expression"
+										},
+										"file": {
+											"value": "cdc.json",
+											"type": "Expression"
+										}
 									}
 								},
 								"firstRowOnly": false
