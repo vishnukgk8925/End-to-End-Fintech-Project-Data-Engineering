@@ -1,0 +1,9 @@
+{
+	"name": "dffintechproject",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2372d544-15d1-4853-a983-410fb4aa4817",
+		"tenantId": "180d69fe-79d1-4e1a-bb4f-e310d6f4624b"
+	}
+}
