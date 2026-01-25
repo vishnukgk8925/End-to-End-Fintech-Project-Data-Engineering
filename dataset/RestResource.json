@@ -20,7 +20,7 @@
 		"type": "RestResource",
 		"typeProperties": {
 			"relativeUrl": {
-				"value": "@{dataset().p_date}?from=@{dataset().p_from}&to=@{dataset().p_to}",
+				"value": "@concat(dataset().p_date, '?from=', dataset().p_from, '&to=', dataset().p_to)\n",
 				"type": "Expression"
 			}
 		},
