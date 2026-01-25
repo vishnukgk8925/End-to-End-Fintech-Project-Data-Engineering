@@ -33,7 +33,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@lessOrEquals(variables('v_currentdate'), pipeline().parameters.p_enddate)\n",
+						"value": "@greater(variables('v_currentdate'), pipeline().parameters.p_enddate)\n",
 						"type": "Expression"
 					},
 					"activities": [
